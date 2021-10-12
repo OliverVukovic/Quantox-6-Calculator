@@ -36,6 +36,9 @@ body {
     --btnshadow: 0px -4px 0px 0px hsla(27, 15%, 65%, 1) inset;
     --redshadow: 0px -4px 0px 0px hsla(6, 70%, 34%, 1) inset;
     --blueshadow: 0px -4px 0px 0px hsla(225, 28%, 35%, 1) inset;
+    --activeshadow: 0px -3px 0px 0px hsla(27, 15%, 65%, 1) inset;
+    --activeredshadow: 0px -3px 0px 0px hsla(6, 70%, 34%, 1) inset;
+    --activeblueshadow: 0px -3px 0px 0px hsla(225, 28%, 35%, 1) inset;
     --boxshadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
     --bluehover: hsla(224, 51%, 76%, 1);
     --redhover: hsla(6, 93%, 67%, 1);
@@ -62,6 +65,9 @@ body {
     --btnshadow: 0px -4px 0px 0px #A79E91 inset;
     --redshadow: 0px -4px 0px 0px #873901 inset;
     --blueshadow: 0px -4px 0px 0px #1B6066 inset;
+    --activeshadow:  0px -3px 0px 0px #A79E91 inset;
+    --activeredshadow: 0px -3px 0px 0px #873901 inset;
+    --activeblueshadow: 0px -3px 0px 0px #1B6066 inset;
     --boxshadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
     --bluehover: #62B5BC;
     --redhover: #FF8A38;
@@ -88,6 +94,9 @@ body {
     --btnshadow: 0px -4px 0px 0px #881C9E inset;
     --redshadow: 0px -4px 0px 0px #6CF9F1 inset;
     --blueshadow: 0px -4px 0px 0px #BE15F4 inset;
+    --activeshadow:  0px -3px 0px 0px #881C9E inset;
+    --activeredshadow: 0px -3px 0px 0px #6CF9F1 inset;
+    --activeblueshadow: 0px -3px 0px 0px #BE15F4 inset;
     --boxshadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
     --bluehover: #8631AF;
     --redhover: #93fff8;
@@ -209,6 +218,10 @@ input {
 .del:hover {
     background-color: var(--bluehover);
 }
+.del:active {
+    background: var(--bluehover);
+    box-shadow: var(--activeblueshadow);
+}
 
 .reset {
     grid-column: span 2;
@@ -222,6 +235,11 @@ input {
 .reset:hover {
     background-color: var(--bluehover);
 }
+.reset:active {
+    background: var(--bluehover);
+    box-shadow: var(--activeblueshadow);
+}
+
 
 .equal {
     grid-column: span 2;
@@ -234,6 +252,10 @@ input {
 }
 .equal:hover {
     background: var(--redhover);
+}
+.equal:active {
+    background: var(--redhover);
+    box-shadow: var(--activeredshadow);
 }
 
 button {
@@ -252,6 +274,10 @@ button {
 }
 button:hover {
     background: var(--btnhover);
+}
+button:active {
+    background: var(--btnhover);
+    box-shadow: var(--activeshadow);
 }
 
 fieldset {
