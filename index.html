@@ -21,45 +21,71 @@
           <div class="up">
             <p>1</p><p>2</p><p>3</p>
           </div>
-          <div class="down">
-            <button class="red-btn"></button>
-            <button class="orange-btn"></button>
-            <button class="blue-btn"></button>
-          </div> 
+
+          <fieldset>
+  
+            <label class="red-btn">
+              <input type="radio" name="button" value="radio" class="red-btn" onclick="changeMode('mode-1')" checked/>
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="orange-btn">
+              <input type="radio" name="button" value="radio" class="orange-btn" onclick="changeMode('mode-2')"/>
+              <span class="checkmark"></span>
+            </label>
+            
+             <label class="blue-btn">
+              <input type="radio" name="button" value="radio" class="blue-btn" onclick="changeMode('mode-3')"/>  
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+          
         </div>
       </div>
     </div>
 
     <div class="output">
-      <div previous-data class="previous">
-        
-      </div>
-      <div current-data class="current">
-        
-      </div>
+      <input type="text" id="inputbox" placeholder="" pattern="[0-9]+"/>
     </div>
 
     <div class="numbers">
-      <button data-number="">7</button>
-      <button data-number="">8</button>
-      <button data-number="">9</button>
-      <button data-delete="" class="color-blue">DEL</button>
-      <button data-number="">4</button>
-      <button data-number="">5</button>
-      <button data-number="">6</button>
-      <button data-operation="">+</button>
-      <button data-number="">1</button>
-      <button data-number="">2</button>
-      <button data-number="">3</button>
-      <button data-operation="">-</button>
-      <button data-number="">.</button>
-      <button data-number="">0</button>
-      <button data-operation="">/</button>
-      <button data-operation="">x</button>
-      <button data-all-clear="" class="span-elements1">RESET</button>
-      <button data-equals="" class="span-elements2">=</button>
+      <button onclick="calculate('7')">7</button>
+      <button onclick="calculate('8')">8</button>
+      <button onclick="calculate('9')">9</button>
+      <button onclick="del()" class="del">DEL</button>
+      <button onclick="calculate('4')">4</button>
+      <button onclick="calculate('5')">5</button>
+      <button onclick="calculate('6')">6</button>
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('1')">1</button>
+      <button onclick="calculate('2')">2</button>
+      <button onclick="calculate('3')">3</button>
+      <button onclick="calculate('-')">-</button>
+      <button onclick="calculate('.')">.</button>
+      <button onclick="calculate('0')">0</button>
+      <button onclick="calculate('/')">/</button>
+      <button onclick="calculate('*')">x</button>
+      <button onclick="clr()" class="reset">RESET</button>
+      <button onclick="result()" class="equal">=</button>
     </div>
-  </div>
+
+  <div> 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!--
+          <div class="down">
+            <input type="radio" name="button" value="radio" class="red-btn" onclick="changeMode('mode-1')" checked/>
+            <input type="radio" name="button" value="radio" class="orange-btn" onclick="changeMode('mode-2')"/>      
+            <input type="radio" name="button" value="radio" class="blue-btn" onclick="changeMode('mode-3')"/>            
+          </div> 
+-->
