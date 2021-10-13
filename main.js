@@ -1,7 +1,6 @@
 // -----  calculate  -----
 
 function calculate(num){
-    
     var result = document.getElementById("inputbox");
     result.value += num;
 }
@@ -11,7 +10,7 @@ function result(){
    // result.value = eval(result.value);    
 
     try{
-        result.value = eval(result.value)
+        result.value = eval(result.value);
     }
     catch(err){
         alert("ERROR!");
