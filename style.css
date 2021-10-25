@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    font-family: 'Spartan', sans-serif;
+    margin: auto;
+    background-color: var(--colorbody);
+    color: var(--colortext);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode-1 {
+    --colorbody: hsl(222, 26%, 31%);
+    --colortext: #ffffff;
+    --coloroutput: hsl(224, 36%, 15%);
+    --colorbutton: #EAE3DC;
+    --colornumbers: #434A59;
+    --colorbox: hsl(223, 31%, 20%);
+    --smallred: hsla(6, 63%, 50%, 1);
+    --smallorange: hsla(25, 98%, 40%, 1);
+    --smallblue: hsla(176, 100%, 44%, 1);
+    --btnblue: hsl(225, 21%, 49%);
+    --btnred: hsl(6, 63%, 50%);
+    --btntext-b: #ffffff;
+    --btntext-r: #ffffff;
+    --btnshadow: 0px -4px 0px 0px hsla(27, 15%, 65%, 1) inset;
+    --redshadow: 0px -4px 0px 0px hsla(6, 70%, 34%, 1) inset;
+    --blueshadow: 0px -4px 0px 0px hsla(225, 28%, 35%, 1) inset;
+    --activeshadow: 0px -3px 0px 0px hsla(27, 15%, 65%, 1) inset;
+    --activeredshadow: 0px -3px 0px 0px hsla(6, 70%, 34%, 1) inset;
+    --activeblueshadow: 0px -3px 0px 0px hsla(225, 28%, 35%, 1) inset;
+    --boxshadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+    --bluehover: hsla(224, 51%, 76%, 1);
+    --redhover: hsla(6, 93%, 67%, 1);
+    --orangehoversmall: hsla(25, 100%, 61%, 1);
+    --bluehoversmall: hsla(176, 100%, 79%, 1);
+    --redhoversmall: hsla(6, 93%, 67%, 1);
+    --btnhover: #ffffff;
+}
+
+.mode-2 {
+    --colorbody: #f2f2f2;
+    --colortext: #36362c;
+    --coloroutput: #eeeeee;
+    --colorbutton: #E5E4E1;
+    --colornumbers: #36362C;
+    --colorbox: #D2CDCD;
+    --smallred: hsla(6, 63%, 50%, 1);
+    --smallorange: hsla(25, 98%, 40%, 1);
+    --smallblue: hsla(176, 100%, 44%, 1);
+    --btnblue: #378187;
+    --btnred: #C85402;
+    --btntext-b: #ffffff;
+    --btntext-r: #ffffff;
+    --btnshadow: 0px -4px 0px 0px #A79E91 inset;
+    --redshadow: 0px -4px 0px 0px #873901 inset;
+    --blueshadow: 0px -4px 0px 0px #1B6066 inset;
+    --activeshadow:  0px -3px 0px 0px #A79E91 inset;
+    --activeredshadow: 0px -3px 0px 0px #873901 inset;
+    --activeblueshadow: 0px -3px 0px 0px #1B6066 inset;
+    --boxshadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+    --bluehover: #62B5BC;
+    --redhover: #FF8A38;
+    --orangehoversmall: hsla(25, 100%, 61%, 1);
+    --bluehoversmall: hsla(176, 100%, 79%, 1);
+    --redhoversmall: hsla(6, 93%, 67%, 1);
+    --btnhover: #ffffff;
+}
+
+.mode-3{
+    --colorbody: #17062A;
+    --colortext: #FFE53D;
+    --coloroutput: #1E0936;
+    --colorbutton: #331C4D;
+    --colornumbers: #FFE53D;
+    --colorbox: #1E0936;
+    --smallred: hsla(6, 63%, 50%, 1);
+    --smallorange: hsla(25, 98%, 40%, 1);
+    --smallblue: hsla(176, 100%, 44%, 1);
+    --btnblue: #56077C;
+    --btnred: #00DED0;
+    --btntext-b: #ffffff;
+    --btntext-r: #1A2327;
+    --btnshadow: 0px -4px 0px 0px #881C9E inset;
+    --redshadow: 0px -4px 0px 0px #6CF9F1 inset;
+    --blueshadow: 0px -4px 0px 0px #BE15F4 inset;
+    --activeshadow:  0px -3px 0px 0px #881C9E inset;
+    --activeredshadow: 0px -3px 0px 0px #6CF9F1 inset;
+    --activeblueshadow: 0px -3px 0px 0px #BE15F4 inset;
+    --boxshadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+    --bluehover: #8631AF;
+    --redhover: #93fff8;
+    --orangehoversmall: hsla(25, 100%, 61%, 1);
+    --bluehoversmall: hsla(176, 100%, 79%, 1);
+    --redhoversmall: hsla(6, 93%, 67%, 1);
+    --btnhover: #6C34AC;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 540px;
+    height: auto;
+    gap: 24px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    background-color: var(--colorbody);
+}
+
+.logo {
+    line-height: 36px;
+    font-size: 32px;
+}
+
+.theme {
+    display: flex;
+    width: 145px;
+    font-size: 12px;
+    line-height: 13px;
+    align-items: flex-end;
+    gap: 20px;
+}
+.theme-text {
+    display: flex;
+}
+.theme-switch {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.up {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.output {
+    width: 100%;
+    height: 128px;
+    background-color: var(--coloroutput);
+    color: var(--colortext);
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--coloroutput);
+    color: var(--colortext);
+    font-size: 48px;
+    line-height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 30px;
+    border: hidden;
+    border-radius: 10px;
+    box-shadow: var(--boxshadow);
+    text-align: end;
+}
+::placeholder {
+    color: var(--colortext);
+}
+
+.numbers {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 65px);
+    gap: 25px;
+    padding: 30px 30px;
+    background-color: var(--colorbox);
+    box-shadow: var(--boxshadow);
+    border-radius: 10px;
+}
+
+.del {
+    background-color: var(--btnblue);
+    color: var(--btntext-b);
+    font-size: 20px;
+    line-height: 22px;
+    box-shadow: var(--blueshadow);
+}
+.del:hover {
+    background-color: var(--bluehover);
+}
+.del:active {
+    background: var(--bluehover);
+    box-shadow: var(--activeblueshadow);
+}
+
+.reset {
+    grid-column: span 2;
+    background-color: var(--btnblue);
+    color: var(--btntext-b);
+    width: auto;
+    font-size: 20px;
+    line-height: 22px;
+    box-shadow: var(--blueshadow);
+}
+.reset:hover {
+    background-color: var(--bluehover);
+}
+.reset:active {
+    background: var(--bluehover);
+    box-shadow: var(--activeblueshadow);
+}
+
+
+.equal {
+    grid-column: span 2;
+    background-color: var(--btnred);
+    color: var(--btntext-r);
+    width: auto;
+    font-size: 20px;
+    line-height: 22px;
+    box-shadow: var(--redshadow);
+}
+.equal:hover {
+    background: var(--redhover);
+}
+.equal:active {
+    background: var(--redhover);
+    box-shadow: var(--activeredshadow);
+}
+
+button {
+    width: 100px;
+    height: 65px;
+    background-color: var(--colorbutton);
+    color: var(--colornumbers);
+    font-size: 32px;
+    line-height: 36px;
+    font-family: 'Spartan', sans-serif;
+    border: 1px hsla(0, 0%, 0%, 1);
+    border-radius: 10px;
+    offset: 0px, 4px;
+    cursor: pointer;
+    box-shadow: var(--btnshadow);
+}
+button:hover {
+    background: var(--btnhover);
+}
+button:active {
+    background: var(--btnhover);
+    box-shadow: var(--activeshadow);
+}
+
+fieldset {
+    width: 70px;  
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    background: var(--colorbox);
+    border: none;
+    box-shadow: var(--boxshadow);
+  }
+  
+  .red-btn {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .orange-btn {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blue-btn {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red-btn .checkmark {
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 50%;
+    background: var(--smallred);
+    display: none;
+  }
+  .red-btn .checkmark:hover {
+    background: var(--redhoversmall);
+  }
+  
+  .orange-btn .checkmark {
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 50%;
+    background: var(--smallorange);
+    display: none;
+  }
+  .orange-btn .checkmark:hover {
+    background: var(--orangehoversmall);
+  }
+  
+  .blue-btn .checkmark {
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 50%;
+    background:var(--smallblue);
+    display: none;
+  }
+  .blue-btn .checkmark:hover {
+    background: var(--bluehoversmall);
+  }
+  
+  .red-btn input {
+    display: none;
+  }
+  .orange-btn input {
+    display: none;
+  }
+  .blue-btn input {
+    display: none;
+  }
+  
+  .red-btn input:checked + .checkmark {
+    display: inline-block;
+  }
+  .orange-btn input:checked + .checkmark {
+    display: inline-block;
+  }
+  .blue-btn input:checked + .checkmark {
+    display: inline-block;
+  }
+
+
+  
+@media (max-width: 430px) {
+
+    .calculator {
+        max-width: 375px;
+        height: auto;
+    }
+
+    .header {
+        align-content: space-around;
+        width: 90%;
+    }
+
+    .output {
+        width: 90%;
+        max-width: 330px;
+        height: 88px;
+        border-radius: 10px;
+    }
+
+    input {
+        font-size: 32px;
+        line-height: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 25px;
+    }
+
+    .numbers {
+        width: 90%;
+        min-height: 100%;
+        gap: 13px;
+        padding: 30px 30px;
+        border-radius: 10px;
+        grid-template-columns: repeat(4, 60px);
+    }
+
+    button {
+        max-width: 60px;
+        max-height: 64px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .reset {
+        max-width: 133px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .equal {
+        max-width: 133px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .del {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+}

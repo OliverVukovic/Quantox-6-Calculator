@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantox - Calculator</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js"></script>
+</head>
+
+<body class="mode-1">
+
+  <div class="calculator">
+
+    <div class="header">
+      <div class="logo">calc</div>
+      <div class="theme">
+        <div class="theme-text">THEME</div>
+        <div class="theme-switch">
+          <div class="up">
+            <p>1</p><p>2</p><p>3</p>
+          </div>
+
+          <fieldset>
+  
+            <label class="red-btn">
+              <input type="radio" name="button" value="radio" class="red-btn" onclick="changeMode('mode-1')" checked/>
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="orange-btn">
+              <input type="radio" name="button" value="radio" class="orange-btn" onclick="changeMode('mode-2')"/>
+              <span class="checkmark"></span>
+            </label>
+            
+             <label class="blue-btn">
+              <input type="radio" name="button" value="radio" class="blue-btn" onclick="changeMode('mode-3')"/>  
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="output">
+      <input type="text" id="inputbox" placeholder="" pattern="[0-9]+"/>
+    </div>
+
+    <div class="numbers">
+      <button onclick="calculate('7')">7</button>
+      <button onclick="calculate('8')">8</button>
+      <button onclick="calculate('9')">9</button>
+      <button onclick="del()" class="del">DEL</button>
+      <button onclick="calculate('4')">4</button>
+      <button onclick="calculate('5')">5</button>
+      <button onclick="calculate('6')">6</button>
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('1')">1</button>
+      <button onclick="calculate('2')">2</button>
+      <button onclick="calculate('3')">3</button>
+      <button onclick="calculate('-')">-</button>
+      <button onclick="calculate('.')">.</button>
+      <button onclick="calculate('0')">0</button>
+      <button onclick="calculate('/')">/</button>
+      <button onclick="calculate('*')">x</button>
+      <button onclick="clr()" class="reset">RESET</button>
+      <button onclick="result()" class="equal">=</button>
+    </div>
+
+  <div> 
+
+</body>
+</html>
